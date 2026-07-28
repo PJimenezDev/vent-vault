@@ -7,7 +7,7 @@ async function sendVent() {
 
     try {
         // Asegúrate de que esta URL coincida con la que expone tu Docker (8000)
-        const response = await fetch('http://localhost:8000/api/vent', {
+        const response = await fetch('/api/vent', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
